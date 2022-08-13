@@ -91,6 +91,9 @@ font-family: 'Splash', cursive; */
     position: relative;
     z-index: 10;
     transition: 1s linear;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     /* padding: 12px; */
 
 }
