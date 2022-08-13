@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>close automatic</menu>
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anton&family=Dancing+Script&family=Mingzat&family=Noto+Serif&family=Roboto&family=Splash&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <section class="sliding-menue">
+        <div class="container">
+            <div class="support">
+                
+                <div class="wrapper-s-m one-w-sm">
+                    <div class="title">
+                        <h5>Paragraph one</h5>
+                        <div class="bars"><i class="fa-solid fa-bars"></i></div>
+                        <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+                    <div class="items">
+                        <p>Exercise! Even walking 30 minutes a day three times a week will greatly improve your health.</p>
+                        <p>Get at least 6-8 hours of sleep every night.</p>
+                    </div>
+                </div>
+
+                <div class="wrapper-s-m two-w-sm">
+                    <div class="title titlediv2">
+                        <h5>Paragraph two</h5>
+                        <div class="bars"><i class="fa-solid fa-bars"></i></div>
+                        <div class="close"><i class="fa-solid fa-xmark"></i></div>
+                    </div>
+                    <div class="items">
+                        <p>Try to maintain a positive attitude even when problems arise.</p>
+                        <p>Discover your personal stress reliever. Manage your time wisely because it will help lower stress.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+
+        const titleDiv = document.getElementsByClassName("title")[0];
+        const titlediv2 = document.getElementsByClassName('titlediv2')[0];
+
+        titleDiv.addEventListener("click", function () {
+            titleDiv.classList.toggle("open");
+            titlediv2.classList.remove("open");
+        });
+
+        titlediv2.addEventListener("click", function () {
+            titlediv2.classList.toggle("open");
+            titleDiv.classList.remove("open");
+        });
+
+    </script>
+</body>
+
+</html>
