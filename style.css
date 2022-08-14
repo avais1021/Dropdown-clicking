@@ -41,7 +41,7 @@ font-family: 'Splash', cursive; */
 }
 
 .one-w-sm .items {
-    margin-bottom: 24px;
+    /* margin-bottom: 24px; */
 }
 
 .title {
@@ -126,4 +126,8 @@ font-family: 'Splash', cursive; */
 
 .open .close {
     display: block;
+}
+
+.one-w-sm .open + .items{
+    margin-bottom: 44px;
 }
