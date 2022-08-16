@@ -90,11 +90,12 @@ font-family: 'Splash', cursive; */
     overflow-y: hidden;
     position: relative;
     z-index: 10;
-    transition: 1s linear;
+    transition: height 1s linear;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    /* padding: 12px; */
+    padding-left: 12px;
+    padding-right: 12px;
 
 }
 
@@ -116,7 +117,7 @@ font-family: 'Splash', cursive; */
 .open+.items {
     /* display: block; */
     height: 160px;
-    padding: 12px;
+    /* padding: 12px; */
 
 }
 
